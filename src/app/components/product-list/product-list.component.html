@@ -1,0 +1,12 @@
+<!-- src/app/components/product-list/product-list.component.html -->
+
+<div *ngIf="products.length > 0">
+  <ul>
+    <li *ngFor="let product of products">
+      {{ product.name }} - {{ product.price }}€
+    </li>
+  </ul>
+</div>
+<div *ngIf="products.length === 0">
+  No products available.
+</div>
